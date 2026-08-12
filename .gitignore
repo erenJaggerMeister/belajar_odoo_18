@@ -1,0 +1,6 @@
+venv/
+.vscode/
+
+odoo18/*
+
+!odoo18/custom_addons/
