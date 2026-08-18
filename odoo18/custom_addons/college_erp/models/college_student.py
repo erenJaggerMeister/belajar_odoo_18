@@ -4,7 +4,7 @@ class CollegeStudent(models.Model):
     _name = "college.student"
     _description = "College Student"
 
-    admission_no = fields.Char(string="Admission Name", required=True)
+    admission_no = fields.Char(string="Admission Number", required=True)
     admission_date = fields.Date(string="Admission Date", required=True)
     first_name = fields.Char(string="First Name", required=True)
     last_name = fields.Char(string="Last Name", required=True)
