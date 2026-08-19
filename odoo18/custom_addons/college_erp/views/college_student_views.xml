@@ -15,14 +15,15 @@
                             <field name="first_name"/>
                             <field name="last_name"/>
                             <field name="email"/>
-                        </group>
-                        <group>
                             <field name="father_name"/>
                             <field name="mother_name"/>
+                        </group>
+                        <group>
                             <field name="phone"/>
                             <field name="communication_address"/>
-                            <span class="o_form_label o_td_label o_address_type fw-bold">Permanent address</span>
-                            <div class="o_address_format">
+                            <field name="same_as_communication" widget="boolean_toggle"/>
+                            <span class="o_form_label o_td_label o_address_type fw-bold" invisible="same_as_communication">Permanent address</span>
+                            <div class="o_address_format" invisible="same_as_communication">
                                 <field name="street" placeholder="Street..." class="o_address_street"/>
                                 <field name="street2" placeholder="Street 2..." class="o_address_street"/>
                                 <field name="city" placeholder="City" class="o_address_city"/>

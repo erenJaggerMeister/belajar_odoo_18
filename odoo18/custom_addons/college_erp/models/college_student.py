@@ -20,3 +20,4 @@ class CollegeStudent(models.Model):
     country_code = fields.Char(related='country_id.code', string='Country Code')
     email = fields.Char(string="Email")
     phone = fields.Char(string="Phone")
+    same_as_communication = fields.Boolean(string="Same as communication", default=True)
